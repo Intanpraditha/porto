@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Intan praditha</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="img/profile.png">
+    <!-- Custom CSS -->
+    <style>
+        .jumbotron {
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            margin-top: 55px;
+            border-radius: .3rem;
+        }
+
+        .certificate-slide {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+        }
+
+        .certificate-slide img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .illustration-item {
+            margin-bottom: 1rem;
+        }
+
+        .illustration-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card-img-top{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .illustration-item {
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+        .illustration-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: transform 0.3s ease;
+        }
+        .illustration-item img:hover {
+            transform: scale(1.05);
+        }
+        #about img {
+            max-width: 250px;
+            margin: 0 auto 2rem;
+        }
+        #imageModal .modal-body {
+            text-align: center;
+        }
+        #imageModal .modal-body img {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-subtle fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-secondary-emphasis" href="#">Intan praditha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Portofolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#projects">Website</a></li>
+                            <li><a class="dropdown-item" href="#design">Design</a></li>
+                            <li><a class="dropdown-item" href="#ilustrasi">Illustration</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <header class="jumbotron text-center bg-light">
+        <h1 class="display-4 text-light-emphasis">Welcome to My Portfolio</h1>
+        <p class="lead text-body-tertiary">Web Developer | Ui Ux Designer | Illustrator</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <img src="img/profile.png" alt="Profile Picture"
+                        class="img-fluid rounded-circle mb-4">
+                    <div>
+                        <p>"Hi, I’m a web developer, UI/UX designer, and illustrator with a passion for creating impactful and visually engaging
+                        digital experiences. I love exploring new ideas and challenging myself to learn and try something different in every
+                        project I work on. This is what i made so far"</p>
+                        <!-- <p>My skills include HTML, CSS, JavaScript, and various frameworks like Bootstrap and React.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Websites</h2><br>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/qline.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Qline</h5>
+                            <p class="card-text">Website antrian Praktek Mandiri Bidan</p>
+                            <a href="https://github.com/Intanpraditha/Qline" class="btn btn-secondary btn-sm">see more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/daime.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Daime DAily IMEji</h5>
+                            <p class="card-text">Website galery foto</p>
+                            <a href="https://github.com/Intanpraditha/Daime" class="btn btn-secondary btn-sm">see more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <!-- 
+        https://www.figma.com/proto/v1LkehNsrGztWdWJMbetho/Company-Profile-Mascitra-(Intan)?node-id=59-297&p=f&t=0XmSFhrnPvYChgQC-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=59%3A297
+        https://www.figma.com/proto/sPH49y6nMXPRP27ZF1UjQT/a-stream?node-id=20-12&starting-point-node-id=3%3A19&t=gNfd3rWcij3xEgNF-1
+        https://www.figma.com/design/5htcBImxEZiZWwbvSig8fk/QLINE?node-id=0-1&t=ZjTFBLcaySIvkeTf-1 xbaner qline
+        https://www.figma.com/design/HxOLctixu0Cvwud4Rs4nOD/snapfest?node-id=3-30&t=KUBK8AU4dAtw3h3t-1 poster
+        https://www.figma.com/design/5T5fcsSMYb0tQTZdqsUrJA/Untitled?node-id=0-1&t=bVZeaoz0d635uGd8-1 micro blog
+
+    
+    -->
+    <!-- Projects Section -->
+    <section id="design" class="py-5 bg-light-subtle">
+        <div class="container">
+            <h2 class="text-center mb-4">Designs</h2><br>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/design/blog.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Micro blog</h5>
+                            <p class="card-text">Desain microblog untuk instagram PT.MASCITRA TEKNOLOGI INFORMASI</p>
+                            <a href="https://www.figma.com/design/5T5fcsSMYb0tQTZdqsUrJA/Untitled?node-id=0-1&t=bVZeaoz0d635uGd8-1" class="btn btn-secondary btn-sm">see more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/design/qline.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Q-line</h5>
+                            <p class="card-text">Desain x-banner dan poster website Q-line</p>
+                            <a href="https://www.figma.com/design/5htcBImxEZiZWwbvSig8fk/QLINE?node-id=0-1&t=ZjTFBLcaySIvkeTf-1" class="btn btn-secondary btn-sm">see more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/design/snapfest.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Snapfest</h5>
+                            <p class="card-text">Desain poster</p>
+                            <a href="https://www.figma.com/design/HxOLctixu0Cvwud4Rs4nOD/snapfest?node-id=3-30&t=KUBK8AU4dAtw3h3t-1" class="btn btn-secondary btn-sm">see more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/design/a-stream.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">A-stream</h5>
+                            <p class="card-text">Desain aplikasi streaming</p>
+                            <a href="https://www.figma.com/proto/sPH49y6nMXPRP27ZF1UjQT/a-stream?node-id=20-12&starting-point-node-id=3%3A19&t=gNfd3rWcij3xEgNF-1" class="btn btn-secondary btn-sm">see more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/design/cp-mascitra.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Company profile</h5>
+                            <p class="card-text">Desain company profile PT.MASCITRA TEKNOLOGI INFORMASI</p>
+                            <a href="https://www.figma.com/proto/v1LkehNsrGztWdWJMbetho/Company-Profile-Mascitra-(Intan)?node-id=59-297&p=f&t=0XmSFhrnPvYChgQC-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=59%3A297" class="btn btn-secondary btn-sm">see more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Illustration Section -->
+    <section id="ilustrasi" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Illustrations</h2><br>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (1).png" alt="Illustration 1" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (1).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (2).png" alt="Illustration 2" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (2).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (3).png" alt="Illustration 3" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (3).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (4).png" alt="Illustration 4" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (4).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (5).png" alt="Illustration 5" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (5).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (6).png" alt="Illustration 6" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (6).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (7).png" alt="Illustration 7" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (7).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (8).png" alt="Illustration 8" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (8).png" data-img-title="">
+                </div>
+                
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (14).png" alt="Illustration 14" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (14).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (15).png" alt="Illustration 15" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (15).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (16).png" alt="Illustration 16" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (16).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (17).png" alt="Illustration 17" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (17).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (18).png" alt="Illustration 18" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (18).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (19).png" alt="Illustration 19" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (19).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (20).png" alt="Illustration 20" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (20).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (21).png" alt="Illustration 21" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (21).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (22).png" alt="Illustration 22" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (22).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (23).png" alt="Illustration 23" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (23).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (24).png" alt="Illustration 24" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (24).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (25).png" alt="Illustration 25" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (25).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (26).png" alt="Illustration 26" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (26).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (27).png" alt="Illustration 27" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (27).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (28).png" alt="Illustration 28" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (28).png" data-img-title="">
+                </div>
+                <div class="col-md-4 col-sm-6 illustration-item">
+                    <img src="img/pic (29).png" alt="Illustration 29" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-img-src="img/pic (29).png" data-img-title="">
+                </div>
+
+                <p class="text-danger" style="--bs-text-opacity: .5;">Please do not use images/illustrations without the owner's permission, thank you</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certificates Section -->
+    <!-- <section id="certificates" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">My Certificates</h2>
+            <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="certificate-slide">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Certificate 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Web Development Certificate</h5>
+                            <p>Completed comprehensive web development course</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="certificate-slide">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Certificate 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>UX Design Certificate</h5>
+                            <p>Mastered user experience design principles</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="certificate-slide">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Certificate 3" class="d-block w-100">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>JavaScript Mastery</h5>
+                            <p>Advanced JavaScript and framework proficiency</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section> -->
+    
+    <br>
+    <!-- Footer -->
+    <footer class="bg-body-secondary text-secondary-emphasis py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024-2025 Itnpraditha. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="https://wa.me/+6285706298928/" class="text-secondary-emphasis me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="https://www.instagram.com/prdthprl_/" class="text-secondary-emphasis me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://github.com/Intanpraditha" class="text-secondary-emphasis"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="Full size image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var imageModal = document.getElementById('imageModal');
+            imageModal.addEventListener('show.bs.modal', function (event) {
+                var button = event.relatedTarget;
+                var imgSrc = button.getAttribute('data-img-src');
+                var imgTitle = button.getAttribute('data-img-title');
+                var modalTitle = imageModal.querySelector('.modal-title');
+                var modalImage = imageModal.querySelector('.modal-body img');
+
+                modalTitle.textContent = imgTitle;
+                modalImage.src = imgSrc;
+            });
+        });
+    </script>
+</body>
+
+</html>
